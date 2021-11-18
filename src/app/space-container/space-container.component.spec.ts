@@ -1,21 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EmpinfoComponent } from './empinfo.component';
+import { SpaceContainerComponent } from './space-container.component';
 
-describe('EmpinfoComponent', () => {
-  let component: EmpinfoComponent;
-  let fixture: ComponentFixture<EmpinfoComponent>;
+describe('SpaceContainerComponent', () => {
+  let component: SpaceContainerComponent;
+  let fixture: ComponentFixture<SpaceContainerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EmpinfoComponent ]
-      
+      declarations: [ SpaceContainerComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EmpinfoComponent);
+    fixture = TestBed.createComponent(SpaceContainerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

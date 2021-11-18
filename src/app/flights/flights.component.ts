@@ -11,8 +11,6 @@ export class FlightsComponent implements OnInit {
   sucess: boolean = true;
   LandSucc: boolean = true;
   showError: string;
-  name='ThaneshTHAANEHS';
-
 
 
 
@@ -22,7 +20,7 @@ export class FlightsComponent implements OnInit {
   constructor(private http: ApiServiceService) { }
 
   flightData: any = []
-  dev_name = "Thaneshwara";
+  dev_name = "Nithyasri";
 
   ngOnInit() {
     this.http.fetchFlights().subscribe(data => {
@@ -36,7 +34,7 @@ export class FlightsComponent implements OnInit {
     })
   }
 
-  
+
   sendYear(year): void {
     console.log(year);
     this.http.fetchAll(year, this.sucess, this.LandSucc).subscribe(data => {
